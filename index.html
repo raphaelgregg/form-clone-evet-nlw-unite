@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Component</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form id="my-form01">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Participe gratuitamente <img src="./assets/tag.svg" alt="</>">
+          </legend>
+
+          <div class="space-y-3">
+            <div class="input-wrapper">
+              <label for="name">Nome completo</label>
+              <input id="name" type="text" placeholder="Nome completo"/>
+            </div>
+    
+            <div class="input-wrapper">
+              <label for="cellphone">Seu numero de WhatsApp</label>
+              <input id="cellphone" type="number" placeholder="Seu numero de WhatsApp"/>
+            </div>
+    
+            <div class="input-wrapper">
+              <label for="email">Digite seu e-mail</label>
+              <input id="email" type="email" placeholder="Digite seu e-mail" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-trail">Escolha sua trilha</label>
+              <input id="event-trail" type="text" disabled placeholder="Escolha sua trilha"></input>
+            </div>
+    
+            <!-- <div class="input-wrapper">
+              <label for="event-trail">Escolha sua trilha</label>
+              <select id="event-trail">
+                <option value="fullstack">HTML+CSS+JS</option>
+                <option value="reactjs">ReactJS</option>
+                <option value="reactnative">React Native</option>
+              </select>
+            </div> -->
+          </div>
+
+          <div class="checkbox-wrapper checkbox">
+            <input type="checkbox" id="event-checkbox" />
+            <label id="event-checkbox" for="event-checkbox">Autorizo o envio de comunicações por e-mail ou qualquer outro meio e concordo com os <a href="#">Termos</a> e <a href="#">Políticas de privacidade.</a></label>
+          </div>
+
+          <button>
+            garantir ingresso gratuito 
+            <i data-lucide="chevron-right"></i>
+          </button>
+
+          <p>Produzido por raphael gregg <span>2024</span></p>
+        </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
+
+<div id="event-trail-modal" class="active">
+  <h3>Escolha sua trilha <i data-lucide="x"></i></h3>
+
+  <ul>
+    <li><div>HTML+CSS+JS | <span>iniciante</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>Java | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>Python | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>ReactJS | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>React Native | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>Node.JS | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>C# | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+    <li><div>DevOps | <span>intermediario</span></div><i data-lucide="chevron-right"></i></li>
+  </ul>
+  <i data-lucide="chevron-right"></i>
+</div>
